@@ -9,8 +9,3 @@
 @import url(../blocks/card.css);
 @import url(../blocks/about.css);
 @import url(../blocks/footer.css);
-
-* {
-  background-size: fill;
-};
-  
