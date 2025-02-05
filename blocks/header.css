@@ -1,4 +1,7 @@
 .header {
+  minwidth: 1200px;
+  max width: 1600px;
+  
   background-color: #fff;
   height: 100vh;
   min-height: 720px;
