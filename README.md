@@ -1,4 +1,5 @@
 # Triple Peaks Coffee Shop Landing Page
+# [Triple Peaks Coffee Shop Landing Page](https://drewsephski.github.io/triplepeaks__coffeeshop)
 
 This is the second project of the Software Engineering program at TripleTen. It was created using ***HTML*** and ***CSS***
 
