@@ -12,6 +12,7 @@
 }
 
 .about {
+  overflow: hidden;
   background-color: #0a2850;
   padding-left: 80px;
   padding-right: 80px;
