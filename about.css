@@ -1,0 +1,82 @@
+/* Keyframes for the pulsate animation */
+@keyframes pulsate {
+  0% {
+    opacity: 0;
+    /* Start of the animation, circle is invisible */
+  }
+
+  50% {
+    opacity: 0.6;
+    /* Middle stage, opacity is 0.6 */
+  }
+
+  100% {
+    opacity: 0;
+    /* End of the animation, circle is invisible */
+    transform: scale(1.5);
+    /* Scale the circle, adjust value as needed */
+  }
+}
+
+
+.about {
+  padding: 100px 80px 173px;
+  background-color: #0A2850;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__title {
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  margin: 0;
+  max-width: 251px;
+  z-index: 2;
+}
+
+.about__content {
+  margin-top: 19px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  max-width: 660px;
+  z-index: 2;
+}
+
+.about__circle {
+  position: absolute;
+  left: -129px;
+  top: -151px;
+  background-color: #2f80ed;
+  width: 426px;
+  height: 426px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+
+/* Modifier for the animated circle */
+.about__circle_animation_blurred {
+  animation: pulsate 1.3s ease-in-out infinite;
+  /* Apply the animation */
+}
+
+.about__paragraph {
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0 0 20px;
+}
+
+.about__paragraph:last-child {
+  margin-bottom: 0px;
+}

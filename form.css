@@ -1,0 +1,76 @@
+/* Form */
+
+.form {
+  max-width: 385px;
+  margin: 0 auto;
+  padding-bottom: 120px;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 20px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+
+}
+
+.form__input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #838383;
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  color: #838383;
+}
+
+.form__button {
+  display: block;
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  background-color: #2f80ed;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 32px;
+  /* Added margin to separate from previous elements */
+}
+
+.form__button:hover {
+  background-color: #0077b3;
+}
+
+/* Checkbox Group */
+
+.form__fieldset {
+  margin-top: 32px;
+  border: none;
+  /* Removes the default border of fieldset */
+  padding: 0;
+  /* Removes default padding */
+}
+
+.form__label_type_checkbox {
+  display: flex;
+  justify-content: center;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+
+}
+
+.form__checkbox {
+  margin-right: 12px;
+  /* Space between checkbox and label text */
+  width: 20px;
+  height: 20px;
+}

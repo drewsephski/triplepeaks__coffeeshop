@@ -1,37 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Triple Peaks Coffee Shop</title>
-    <meta
-      name="Triple Peaks Coffee Shop"
-      content="More than a coffee shop - Triple Peaks Coffee Shop"
-    />
-    <meta name="Drew Sepeczi" content="" />
-    <meta
-      name="keywords"
-      content="coffee, coffeeshop, morning, latte, pastries, tea"
-    />
-    <link rel="stylesheet" href="pages/index.css" />
-    <link rel="shortcut icon" href="favicon.ico" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Triple Espresso Coffee Shop</title>
+    <meta name="author" content="Drew Sepeczi"/>
+    <meta name="description" content="Triple Espresso Coffee Shop"/>
+    <meta name="keywords" content="coffee, espresso, coffeeshop, morning, latte, pastries, tea"/>
+    <link rel="stylesheet" href="pages/index.css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Serif:ital@0;1&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Serif:ital@0;1&display=swap"
+      rel="stylesheet"/>
   </head>
 
   <body>
     <div class="page">
       <header class="header">
         <nav class="nav">
-          <img
-            src="images/logo_coffeeshop_dark.svg"
-            alt="Cafe Logo"
-            class="nav__logo"
-          />
+          <img src="./images/logo_coffeeshop_dark.svg" alt="Cafe Logo" class="nav__logo"/>
           <ul class="nav__links">
             <li><a href="#recipes" class="nav__link">Recipes</a></li>
             <li><a href="#reservation" class="nav__link">Book a Table</a></li>
@@ -47,23 +36,22 @@
           Welcome to our study zone! We've got the coffee to energize you and
           the cozy vibes to help you get creative.
         </p>
-        <img
-          src="images/inside_coffee_shop.png"
-          alt="Inside the Coffee Shop"
-          class="header__image"
-        />
+        <img src="./images/inside_coffee_shop.png" alt="Inside the Coffee Shop" class="header__image"/>
         <div class="header__footer">
           <div>
-            <p class="header__paragraph">Hours:</p>
-            <p class="header__paragraph">Monday – Friday (10:00 – 19:00)</p>
-            <p class="header__paragraph">Saturday – Sunday (11:00 – 18:00)</p>
+            <p class="header__heading">Hours:</p>
+            <ul class="header__link">
+              <li class="header__paragraph">Monday - Friday (10:00 - 19:00)</li>
+              <li class="header__paragraph">Saturday - Sunday (11:00 - 18:00)</li>
+            </ul>
           </div>
-          <p class="header__paragraph">
-            200 Success Avenue, The Town of Triple Peaks
-          </p>
+          <div>
+            <p class="header__paragraph">
+              200 Success Avenue, The Town of Triple Peaks
+            </p>
+          </div>
         </div>
       </header>
-
       <main class="content">
         <section id="recipes" class="recipes">
           <h2 class="recipes__title">Recipes</h2>
@@ -73,25 +61,19 @@
           </p>
           <ul class="recipes__videos">
             <li>
-              <iframe
-                class="recipes__iframe"
-                src="https://www.youtube.com/embed/j6VlT_jUVPc?si=d15e0og0Vp8o9ZM7"
-                title="YouTube video player"
+              <iframe class="recipes__iframe" src="https://www.youtube.com/embed/j6VlT_jUVPc?si=d15e0og0Vp8o9ZM7"
+                title="The Ultimate AeroPress Technique (Episode #3)"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
+                allowfullscreen></iframe>
               <p class="recipes__video-caption">
                 <span>Aeropress Recipe</span> ~5 min
               </p>
             </li>
             <li>
-              <iframe
-                class="recipes__iframe"
-                src="https://www.youtube.com/embed/st571DYYTR8?si=zq2loszUo1LDeooq"
-                title="YouTube video player"
+              <iframe class="recipes__iframe" src="https://www.youtube.com/embed/st571DYYTR8?si=zq2loszUo1LDeooq"
+                title="The Ultimate French Press Technique"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
+                allowfullscreen></iframe>
               <p class="recipes__video-caption">
                 <span>French Press Recipe</span> ~15 min
               </p>
@@ -101,51 +83,22 @@
         <section id="reservation" class="reservation">
           <h2 class="reservation__title">Book a Table</h2>
           <form class="reservation__form form">
+            <label for="name" class="form__label">Name *
+              <input class="form__input" type="text" id="name" name="name" placeholder="Name Surname"/>
+            </label>
+            <label for="guests" class="form__label">Number of Guests *
+              <input class="form__input" type="number" id="guests" name="guests" placeholder="1-8" min="1" max="8"/>
+            </label>
+            <label for="date-time" class="form__label">Date & Time *
+              <input class="form__input" type="date" name="date-time" id="date-time"/>
+            </label>
+            <label for="email" class="form__label">Your Email *
+              <input class="form__input" type="email" id="email" name="email" placeholder="email@email.com"/>
+            </label>
+            <button class="form__button" type="submit">Book a Table</button>
             <fieldset class="form__fieldset">
-              <label for="name" class="form__label">Name *</label>
-              <input
-                class="form__input"
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Name Surname"
-              />
-              <label for="guests" class="form__label">Number of guests *</label>
-              <input
-                class="form__input"
-                type="text"
-                id="guests"
-                name="guests"
-                placeholder="1-8"
-              />
-              <label for="datetime-local" class="form__label"
-                >Date & Time *</label
-              >
-              <input
-                class="form__input"
-                type="datetime-local"
-                id="datetime-local"
-                name="datetime-local"
-              />
-              <label for="email" class="form__label">Your email *</label>
-              <input
-                class="form__input"
-                type="email"
-                id="email"
-                name="email"
-                placeholder="email@email.com"
-              />
-              <button class="form__button" type="submit">Book a Table</button>
-              <label
-                for="terms-of-use"
-                class="form__label form__label_type_checkbox"
-                ><input
-                  type="checkbox"
-                  class="form__checkbox"
-                  id="terms-of-use"
-                  name="terms-of-use"
-                />I agree with the terms of use</label
-              >
+              <label for="terms-of-use" class="form__label form__label_type_checkbox"><input type="checkbox"
+                  class="form__checkbox" id="terms-of-use" name="terms-of-use" />I agree with the terms of use</label>
             </fieldset>
           </form>
         </section>
@@ -169,14 +122,10 @@
                   XL (20 oz)<span class="card__list-divider"></span>$1.5
                 </li>
                 <li class="card__list-item">
-                  Party-size (24 oz, decaf)<span
-                    class="card__list-divider"
-                  ></span
-                  >$1.75
+                  Party-size (24 oz, decaf)<span class="card__list-divider"></span>$1.75
                 </li>
                 <li class="card__list-item">
-                  Iced Coffee (16 oz)<span class="card__list-divider"></span
-                  >$1.25
+                  Iced Coffee (16 oz)<span class="card__list-divider"></span>$1.25
                 </li>
               </ul>
             </li>
@@ -193,10 +142,7 @@
                   Mocha<span class="card__list-divider"></span>$3
                 </li>
                 <li class="card__list-item">
-                  Sunrise in the Bay Area (decaf)<span
-                    class="card__list-divider"
-                  ></span
-                  >$10
+                  Sunrise in the Bay Area (decaf)<span class="card__list-divider"></span>$10
                 </li>
               </ul>
             </li>
@@ -245,34 +191,21 @@
           <div class="about__circle about__circle_animation_blurred"></div>
         </section>
       </main>
-      <footer class="footer">
-        <div class="footer__content">
-            <img
-              src="images/logo_coffeeshop_light.svg"
-              alt="Cafe Logo"
-              class="footer__logo"
-            />
-          </div>
-          <div class="footer__social">
-            <h3 class="footer__social-heading">Social Media</h3>
+      <footer class="footer" id="contacts">
+        <div class="footer__contents">
+          <img class="footer__logo" src="./images/logo_coffeeshop_light.svg" alt="footer logo"/>
+          <div class="footer__content-social">
+            <h3 class="footer__content-heading">Social media</h3>
             <ul class="footer__list">
               <li class="footer__list-item">
-                <a href="#" class="footer__social-link">
-                  <img
-                    src="images/facebook_white.svg"
-                    alt="Facebook Logo"
-                    class="footer__social-icon"
-                  />Facebook</a
-                >
+                <a class="footer__content-link" href="#">
+                  <img class="footer__social-icon" src="./images/facebook_white.svg" alt="Facebook"/>Facebook</a>
               </li>
               <li class="footer__list-item">
-                <a href="#" class="footer__social-link">
-                  <img
-                    src="images/instagram_white.svg"
-                    alt="Instagram Logo"
-                    class="footer__social-icon"
-                  />Instagram</a
-                >
+                <a class="footer__content-link" href="#">
+                  <img class="footer__social-icon" src="./images/instagram_white.svg" alt="Instagram"/>
+                  Instagram
+                </a>
               </li>
             </ul>
           </div>
@@ -281,4 +214,5 @@
       </footer>
     </div>
   </body>
+
 </html>

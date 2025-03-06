@@ -1,0 +1,62 @@
+@import url(../vendor/normalize.css);
+@import url(../blocks/page.css);
+@import url(../blocks/nav.css);
+@import url(../blocks/header.css);
+@import url(../blocks/recipes.css);
+@import url(../blocks/reservation.css);
+@import url(../blocks/form.css);
+@import url(../blocks/menu.css);
+@import url(../blocks/card.css);
+@import url(../blocks/about.css);
+@import url(../blocks/footer.css);
+
+/* Light theme styles */
+.light-theme {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Dark theme styles */
+.dark-theme {
+    background-color: #000;
+    color: #fff;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+#theme-toggle {
+    border: 1px solid #cccccc5d;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f0f0f03f;
+    color: #333;
+    animation: pulse 2s infinite;
+    top: 50%;
+    /* Center vertically */
+    left: 50%;
+    /* Center horizontally */
+    transform: translate(-50%, -50%);
+    /* Adjust the positioning to the exact center */
+
+    /* Adjust the size of the button */
+    padding: 4px 8px;
+    /* Smaller padding */
+    font-size: 10px;
+    /* Smaller font size */
+}
+
+#theme-toggle:hover {
+    background-color: #e0e0e0;
+}
