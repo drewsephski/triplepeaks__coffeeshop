@@ -2,7 +2,6 @@
   box-sizing: border-box;
   background: linear-gradient(180deg, #0a2850 0%, #071931 100%);
   padding: 60px 80px;
-  /* Top and bottom padding 60px, left and right padding 80px */
 }
 
 .footer__contents {
