@@ -11,6 +11,7 @@
   max-height: 800px;
   padding: 30px 80px 40px;
   box-sizing: border-box;
+  color: #3F96F3;
 }
 
 .header__title {
@@ -23,7 +24,6 @@
   margin-top: 183px;
   letter-spacing: -0.6px;
   margin-bottom: 0px;
-  color: #3F96F3;
 }
 
 .header__span-accent {
